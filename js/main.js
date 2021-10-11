@@ -2,12 +2,20 @@
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId);
     const nav = document.getElementById(navId);
+    const header = document.getElementById("header");
 
     // Validate that variable exists
     if(toggle && nav){
         //We add the show-menu class to the div tag with the nav__menu class
         toggle.addEventListener("click", () => {
             nav.classList.toggle("show-menu")
+        })
+    }
+
+    if(toggle && nav){
+        //We add the show-menu class to the div tag with the nav__menu class
+        toggle.addEventListener("click", () => {
+           header.classList.toggle("show-background")
         })
     }
 }
