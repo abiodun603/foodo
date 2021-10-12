@@ -305,6 +305,7 @@ button:hover{
 
 /* ============= ABOUT ============== */
 .about__container{
+    position: relative;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: var(--header-height);
@@ -324,6 +325,7 @@ button:hover{
 
 .about__image__container{
     margin-bottom: var(--mb-4);
+    /* position: relative; */
 }
 .about__image{
     position: relative;
@@ -337,6 +339,7 @@ button:hover{
 
 }
 .about__image > img{
+    position: relative;
     height: 450px;
     width: 100%;
     border-radius: 16px;
@@ -368,8 +371,8 @@ button:hover{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transform: translate(130%, 200%);
-    margin: 0 auto;
+    transform: translate(-50%, 200%);
+    left: 50%;
 }
 
 .about-icon{
