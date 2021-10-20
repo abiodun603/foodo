@@ -3,6 +3,7 @@
     --header-height: 3rem;
 
     /* ======== Colors =========== */
+    --know-background: #FDFDFD;
     --kPurple : #A65AD8;
     --kPurpleAlt : #a959df;
     --kPurple2 : rgb(109,75,107);
@@ -11,6 +12,7 @@
     --text-color2: #8C7D8D;
     --body-color: #FDFDFD;
     --light-gradient: linear-gradient(#FCF4FF,#FDFBFE, #F6F6F6 );
+    --know-boxShadow: 0 2px 10px rgba(166, 90, 216, .5);
 
     /* ======= Fonts and Typography ======== */
     --body-font : "Montserrat", sans-serif;
@@ -244,9 +246,11 @@ body.dark-theme{
     --kGlassPurple : #FDFEFB;
     --kPurple : #A65AD8;
     --kPurpleAlt : #a959df;
-    --kPurple2 : rgb(109,75,107);
+    --kPurple2 : #FDFEFB;
     --text-color: #C4C4C4;
     --text-color2: #8C7D8D;
+    --know-background: #3E1B3C;
+    --know-boxShadow: none;
     /* --body-color: #978996; */
     --light-gradient: linear-gradient(#3C1F3B 5%,#3A223A 10% , #3B2339 30% , #3A223A 30%, #3A2538 15%, #4A3651 45%);
 }
@@ -254,7 +258,7 @@ body.dark-theme{
 /* ========= DARK MODE STYLING ========== */
 .change-theme{
     position: absolute;
-    top: 1.8rem;
+    top: .1rem;
     right: 1rem;
     color: var(--text-color);
     font-size: 1rem;
@@ -480,8 +484,9 @@ button:hover{
     padding-bottom: var(--header-height);
     height: calc(100% - var(--header-height));
     align-content: center;
-    background-color: var(--body-color);
+    background-color: var(--know-background);
 }
+
 
 .know__data{
     z-index: var(--z-tooltip);
@@ -497,7 +502,7 @@ button:hover{
 
 .know__image > img{ 
     margin-top: var(--mb-4);
-    box-shadow: 0 2px 10px rgba(166, 90, 216, .5);
+    box-shadow: var(--know-boxShadow);
 }
 
 /* =========== SUBSCRIBE ============ */
@@ -577,7 +582,7 @@ button:hover{
     font-weight: var(--font-mediun);
 }
 
-/* SOCIAL ICON */
+/* ============ SOCIAL ICON =========== */
 .social__icon{
     display: flex;
     align-items: center;
