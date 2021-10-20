@@ -70,3 +70,13 @@ function scrollTop(){
     if(this.scrollY >= 560 ) scrollTop.classList.add("scroll-top"); else nav.classList.remove("scroll-top")
 }
 window.addEventListener("click" , scrollTop)
+
+
+/* =========== DARK LIGHT THEME =============== */
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+
+// Activate / Deactivate theme manually with the button
+themeButton.addEventListener('click', () =>{
+    document.body.classList.toggle(darkTheme)
+})

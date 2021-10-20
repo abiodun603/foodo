@@ -10,6 +10,7 @@
     --text-color: #C4C4C4;
     --text-color2: #8C7D8D;
     --body-color: #FDFDFD;
+    --light-gradient: linear-gradient(#FCF4FF,#FDFBFE, #F6F6F6 );
 
     /* ======= Fonts and Typography ======== */
     --body-font : "Montserrat", sans-serif;
@@ -131,6 +132,7 @@ img{
 }
 
 .nav{
+    position: relative;
     max-width: 1024px;
     height: var(--header-height);
     display: flex;
@@ -237,10 +239,32 @@ img{
     bottom: 1.5rem;
 }
 
+/* =========== VARIABLE DARL THEME =========== */
+body.dark-theme{
+    --kGlassPurple : #FDFEFB;
+    --kPurple : #A65AD8;
+    --kPurpleAlt : #a959df;
+    --kPurple2 : rgb(109,75,107);
+    --text-color: #C4C4C4;
+    --text-color2: #8C7D8D;
+    /* --body-color: #978996; */
+    --light-gradient: linear-gradient(#3C1F3B 5%,#3A223A 10% , #3B2339 30% , #3A223A 30%, #3A2538 15%, #4A3651 45%);
+}
+
+/* ========= DARK MODE STYLING ========== */
+.change-theme{
+    position: absolute;
+    top: 1.8rem;
+    right: 1rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 /* ============= HOME============== */
 .l-main{
     /* background: linear-gradient(#FBE9FF,#FCF4FF,#FDFBFE, #F6F6F6); */
-    background: linear-gradient(#FCF4FF,#FDFBFE, #F6F6F6);
+    background: var(--light-gradient);
     padding-top: var(--header-height);
 }
 .home__container{
@@ -484,7 +508,6 @@ button:hover{
     padding-bottom: var(--header-height);
     height: calc(100% - var(--header-height));
     align-content: center;
-    background-color: #F6F6F6;
 }
 .subscribe-title > span{
     color:var(--kGlassPurple)
@@ -527,7 +550,7 @@ button:hover{
     padding-bottom: var(--header-height);
     height: calc(100% - var(--header-height));
     align-content: center;
-    background-color: #F6F6F6;
+    /* background-color: #F6F6F6; */
 }
 
 .footer-title{
