@@ -14,7 +14,7 @@
     --text-color2: #8C7D8D;
     --body-color: #FDFDFD;
     --input-background: #ffffff;
-    --light-gradient: linear-gradient(#FCF4FF,#FDFBFE, #F6F6F6 );
+    --light-gradient: linear-gradient(#FCF4FF,#FDFBFE, #F6F6F6 50% );
     --know-boxShadow: 0 2px 10px rgba(166, 90, 216, .5);
 
     /* ======= Fonts and Typography ======== */
